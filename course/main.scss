@@ -1,0 +1,76 @@
+@charset 'utf-8';
+@import './lib/reset.scss';
+html,
+body,
+#app,
+.container {
+    @include rect(100%, 100%);
+    @include root-scroll();
+}
+
+.container {
+    @include flexbox();
+    @include flex-direction(column);
+    header {
+        @include rect(100%, 0.44rem);
+        @include bgcolor(#fff);
+        border-bottom:1px solid #eee;
+        padding:0 0.1rem;
+        ul{
+            @include rect(100%, 0.44rem)
+            @include flexbox();
+         @include justify-content(space-between);
+       @include align-items();
+             
+            li{
+             
+              
+                &:nth-child(1),&:nth-child(3){
+                     font-size:.22rem;
+                    p{
+                        font-size:.22rem
+                    }
+                  
+                }
+                
+                }
+            }
+        
+        
+    }
+    #content {
+        @include flex();
+        @include rect(100%, 100%);
+        overflow: auto;
+    }
+    footer {
+        @include rect(100%, 0.5rem);
+        @include bgcolor(#eee);
+        ul {
+            @include rect(100%, 100%);
+            @include flexbox()
+             a {
+                @include rect(auto, 100%);
+                @include flex();
+                @include textcolor(#333);
+               &.active{
+               @include textcolor(#f66)
+               }
+               
+                li {
+                 
+                    @include rect(100%, 100%) @include flexbox();
+                    @include flex-direction(column);
+                    @include justify-content();
+                    @include align-items();
+                    
+                    p{
+                        &.iconfont{
+                            @include fontsize(0.22rem)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "./../lib/reset.scss";
+
+*{list-style: none;}
+
+
+     ul{
+         li{
+            
+              &:nth-child(2){
+                  .mask{
+                    position:absolute;
+                    z-index:999;  
+              }
+             
+             }
+             
+         }
+     }
+ 
+

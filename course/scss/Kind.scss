@@ -1,0 +1,48 @@
+@import "./../lib/reset.scss";
+
+*{list-style: none;}
+#kindContent{
+   
+    .girlKind{
+    @include rect(100%,.36rem);
+    @include textcolor(#999);
+    @include bgcolor(#eee);
+    @include lineheight(0.36rem)
+    text-indent:0.2rem;
+}
+.girl{
+     padding-left:0.2rem;
+     padding-right:0.2rem;
+     
+     a{
+         color:#999;
+         margin-top:0.1rem;
+         margin:0 0.03rem;
+         &.hover{
+             color:red
+         }
+     }
+     h3{
+        margin-top:0.1rem;
+        line-height:0.3rem;
+        border-top:1px solid #eee;
+    }
+}
+.boy{
+     padding-left:0.2rem;
+     a{
+         color:#999;
+         margin-top:0.1rem;
+         margin:0 0.03rem;
+          &.hover{
+             color:red
+         }
+     }
+      h3{
+        margin-top:0.1rem;
+        line-height:0.3rem;
+        border-top:1px solid #eee;
+    }
+}
+}
+

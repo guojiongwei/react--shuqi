@@ -1,0 +1,86 @@
+@import "./../lib/reset.scss";
+
+*{list-style: none;}
+#content{
+    ul{
+        @include rect(100%,auto);
+        padding:0.2rem 0.2rem 0 0;
+        a{
+            color:#000;
+            li{
+                 @include rect(100%,1.4rem);
+                 padding:0.2rem;
+                 overflow:hidden;
+                 border-top:1px solid #eee;
+             img{
+            float:left;
+             @include rect(0.84rem,1.1rem);
+             margin-right:0.2rem;
+        }
+         span{
+             @include fontsize(0.16rem);
+             color:#000;
+         }
+         em{
+             color:#999;
+         }
+         time{
+             color:#333;
+         }
+         .pp{
+      color:#999;
+      margin:0.04rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+-webkit-line-clamp:2;
+overflow: hidden ;
+font-size:0.12rem;
+    }
+        }
+       
+    }
+}
+}
+
+#content{
+    .div1{
+        @include rect(100%,auto);
+        padding:0.2rem 0.2rem 0 0;
+        a{
+            color:#000;
+            li{
+                 @include rect(100%,1.4rem);
+                 padding:0.2rem;
+                 overflow:hidden;
+                 border-top:1px solid #eee;
+             img{
+            float:left;
+             @include rect(0.84rem,1.1rem);
+             margin-right:0.2rem;
+        }
+         span{
+             @include fontsize(0.16rem);
+             color:#000;
+         }
+         em{
+             color:#999;
+         }
+         time{
+             color:#333;
+         }
+         .pp{
+      color:#999;
+      margin:0.04rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+-webkit-line-clamp:2;
+overflow: hidden ;
+font-size:0.12rem;
+    }
+        }
+       
+    }
+}
+}
+
+

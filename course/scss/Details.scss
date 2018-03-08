@@ -1,0 +1,132 @@
+@import "./../lib/reset.scss";
+
+*{list-style: none;}
+*{margin:0;padding:0}
+.am-toast{
+    position:absolute;
+    left:30%;
+    top:36%;
+    z-index:999;
+    @include rect(1.4rem,0.7rem);
+    @include bgcolor(#000);
+    color:#fff;
+    border-radius:0.1rem;
+    text-align:center;
+    line-height:0.7rem;
+    opacity:0.7;
+}
+.DetailsContent{
+     @iculde rect(100%,100%);
+     .box{    
+         border-bottom:5px solid #eee;
+     section{
+         overflow:hidden;
+         img{
+             float:left;
+             @include rect(1rem,1.3rem);
+             margin:0.16rem 0.2rem;
+             
+         }
+         p{
+             @include fontsize(0.16rem);
+             margin-top:0.3rem;
+             color:#333;
+         }
+         span{
+             @include lineheight(0.3rem);
+             color:#999;
+         }
+         time{
+             @include lineheight(0.24rem);
+             color:#999;
+         }
+          i{
+             @include lineheight(0.24rem);
+             color:#999;
+         }
+         
+     }
+     .btn{
+         button{
+             @include rect(1.05rem,0.41rem);
+             margin-left:.15rem;
+             &:nth-child(1){
+                 background: #00c98d;
+                  
+                  border: 1px solid #00c98d;
+                  border-radius: .08rem;
+                 
+                  a{
+                       color: #fff;
+                  }
+             }
+             &:nth-child(2),&:nth-child(3){
+                     border: 1px solid #00c98d;
+                     border-radius: .08rem;
+                     @include bgcolor(#fff);
+                     color: #00c98d;
+             }
+         }
+     }
+    .pp{
+      color:#999;
+      margin:0.2rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+-webkit-line-clamp:4;
+overflow: hidden 
+    }
+    .pp:active{
+-webkit-line-clamp:10;
+    }
+    .new{
+        @include rect(90%,0.36rem);
+        margin:0.1rem auto;
+        line-height:0.36rem;
+        border-bottom:1px solid #eee;
+        em{
+        margin-left:0.2rem;
+        color:#999;
+        }
+          time{
+       margin-left:0.2rem;
+       color:#999;
+       .times{
+           color:#333;
+           margin-right:0.1rem;
+       }
+    }
+       
+        
+    
+     span{
+            float:right;
+            color:#999;
+            @include rect(0.1rem,0.16rem);
+            margin-right:0.1rem
+        }
+    }
+    .mulu{
+        display:block;
+        @include rect(100%,0.36rem);
+        line-height:0.36rem;
+        color:#333;
+        time{
+       margin-left:0.4rem;
+       line-height:0.36rem;
+       color:#999;
+       margin-right:0.2rem;
+    }
+    
+     span{
+            float:right;
+            line-height:0.36rem;
+            margin-right:0.22rem;
+            color:#999;
+        }
+       
+    }
+    
+}
+}
+

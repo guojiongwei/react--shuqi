@@ -1,0 +1,62 @@
+@import "./../lib/reset.scss";
+
+*{list-style: none;}
+.loginContent{
+    padding:0.2rem;
+    input,button{
+        font-family: inherit;
+    font-size: 100%;
+    vertical-align: middle;
+    outline: 0;
+    border: 0;
+}
+.login-input-wrap{
+        border-bottom: 1px solid #f3f3f3;
+    font-size: .16rem;
+    display: -webkit-box;
+    margin-top: .22rem;
+    position: relative;
+    overflow: hidden;
+       .bold {
+    color: #333;
+    line-height: .25rem;
+    margin-right: .28rem;
+}
+   input{
+       height: .2rem;
+    -webkit-user-select: text;
+    user-select: text;
+    overflow: hidden;
+   } 
+}
+.login-button {
+    width: 100%;
+    height: .44rem;
+    font-size: .16rem;
+    background-color: #E6E7ED;
+    color: #C6C7CC;
+    text-align: center;
+    line-height: .44rem;
+    margin-top: .32rem;
+    border-radius: .08rem;
+        background-color: #00C98D;
+    color: #FFF;
+}
+#login_in .service-procotol {
+  
+    padding: 0 .56rem;
+    margin-top: .32rem;
+    text-align: center;
+    font-size: .14rem;    color: #999;
+    line-height: .4rem;
+    padding-top: .4rem!important;
+
+}
+.js-go-service{
+    color:#00C98D
+}
+.js-go-secret{
+    color:#00C98D
+}
+}
+

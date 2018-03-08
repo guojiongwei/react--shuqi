@@ -1,0 +1,30 @@
+@import "./../lib/reset.scss";
+
+*{list-style: none;}
+
+.schHead {
+    background: #F0F0F2;
+    padding: .1rem .16rem;
+    height: 0.6rem;
+    position: relative;
+    .schBlock {
+    height: .4rem;
+    display:box;
+    padding: 0 .16rem 0 .12rem;
+    background: #fff;
+    border-radius: .02rem;
+    text-align:center;
+   
+}
+
+}
+.schBlock input {
+    display: block;
+    font-size: .14rem;
+    color: #333;
+    height: .2rem;
+    border:none;
+    @include rect(100%,100%)
+    
+}
+
