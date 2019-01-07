@@ -2,6 +2,7 @@ import React from 'react';
 import $ from 'jquery'
 import { NavLink } from 'react-router-dom'
 import './../scss/Home.scss'
+import './../scss/List.scss'
 export default class Home extends React.Component {
 
 constructor(props){

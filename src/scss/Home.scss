@@ -36,8 +36,9 @@ ul {
 }
 
 .kind {
-    @include rect(100%, 1.2rem);
+    @include rect(100%, 100%);
     margin-top: -.26rem;
+    overflow: auto;
     border-bottom: 1px solid #eee;
     ul {
         @include rect(100%, 100%);

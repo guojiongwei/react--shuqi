@@ -3,7 +3,7 @@
 html,
 body,
 #app,
-.container {
+.container,.animate-wrapper {
     @include rect(100%, 100%);
     @include root-scroll();
 }
@@ -74,3 +74,8 @@ body,
         }
     }
 }
+.animate-wrapper div:nth-of-type(1){
+    
+    @include rect(100%, 100%);
+    @include root-scroll();
+  }
