@@ -60,7 +60,7 @@ const dev = merge(baseConfig, {
         //配置html入口信息
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: 'index.html',
+            template: 'template.html',
             inject: true
         }),
         //编译提示插件

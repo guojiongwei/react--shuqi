@@ -23,7 +23,7 @@ const assetsPath = dir => path.posix.join(prodConf.assetsPath, dir)
 const prod = merge({}, baseConf, {
     output: {
         //Build后所有文件存放的位置
-        path: path.resolve(__dirname, '../dist'),
+        path: path.resolve(__dirname, '../'),
 
         //html引用资源路径,可在此配置cdn引用地址！
         publicPath: prodConf.publicPath,
@@ -109,8 +109,8 @@ const prod = merge({}, baseConf, {
 
         // html配置
         new HtmlWebpackPlugin({
-            filename: path.resolve(__dirname, '../dist/index.html'),
-            template: 'index.html',
+            filename: path.resolve(__dirname, '../index.html'),
+            template: 'template.html',
             favicon: path.resolve(__dirname, '../static/favicon.ico'),
             inject: true,
             //压缩配置
