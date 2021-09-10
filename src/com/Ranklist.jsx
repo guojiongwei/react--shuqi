@@ -30,7 +30,7 @@ export default class Rankslist extends React.Component {
 		})
 		var page = 1;
 		$.ajax({
-			url: 'http://read.xiaoshuo1-sm.com/novel/i.php?do=is_novelrank&p=1&page=' + page + '&size=10&onlyCpBooks=1&gender=1&type=' + type + '&shuqi_h5=&_=1510929033295',
+			url: 'http://shuqi.guojiongwei.top/novel/i.php?do=is_novelrank&p=1&page=' + page + '&size=10&onlyCpBooks=1&gender=1&type=' + type + '&shuqi_h5=&_=1510929033295',
 			success: function(data) {
 				console.log(data.data)
 				that.setState({
@@ -57,7 +57,7 @@ export default class Rankslist extends React.Component {
 			page++
 			//console.log(page)
 			$.ajax({
-				url: 'http://read.xiaoshuo1-sm.com/novel/i.php?do=is_novelrank&p=1&page=' + page + '&size=10&onlyCpBooks=1&gender=1&type=' + type + '&shuqi_h5=&_=1510929033295',
+				url: 'http://shuqi.guojiongwei.top/novel/i.php?do=is_novelrank&p=1&page=' + page + '&size=10&onlyCpBooks=1&gender=1&type=' + type + '&shuqi_h5=&_=1510929033295',
 				success: function(data) {
 					//console.log(data.data)
 					var datas = data.data

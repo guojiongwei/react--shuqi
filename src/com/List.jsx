@@ -25,7 +25,7 @@ export default class List extends React.Component {
 		var page = 1;
 		//console.log(gid)
 		$.ajax({
-			url: "http://read.xiaoshuo1-sm.com/novel/i.php?do=is_caterank&p=1&page=" + page + "&words=&shuqi_h5=&onlyCpBooks=1&secondCate=" + gid + "&sort=monthHot&_=1510843580965",
+			url: "http://shuqi.guojiongwei.top/novel/i.php?do=is_caterank&p=1&page=" + page + "&words=&shuqi_h5=&onlyCpBooks=1&secondCate=" + gid + "&sort=monthHot&_=1510843580965",
 			success: function(data) {
 				console.log(data.data)
 				if(data.data.length!=0){
@@ -34,7 +34,7 @@ export default class List extends React.Component {
 				})
 				}else{
 			   $.ajax({
-			url: "http://read.xiaoshuo1-sm.com/novel/i.php?do=is_caterank&p=1&page="+page+"&words=&shuqi_h5=&onlyCpBooks=1&tag="+gid+"&sort=monthHot&_=1511417327097",
+			url: "http://shuqi.guojiongwei.top/novel/i.php?do=is_caterank&p=1&page="+page+"&words=&shuqi_h5=&onlyCpBooks=1&tag="+gid+"&sort=monthHot&_=1511417327097",
 			success: function(data) {
 			console.log(data.data)
 					that.setState({
@@ -73,7 +73,7 @@ export default class List extends React.Component {
 			page++
 			//console.log(page)
 			$.ajax({
-				url: "http://read.xiaoshuo1-sm.com/novel/i.php?do=is_caterank&p=1&page=" + page + "&words=&shuqi_h5=&onlyCpBooks=1&secondCate=" + gid + "&sort=monthHot&_=1510843580965",
+				url: "http://shuqi.guojiongwei.top/novel/i.php?do=is_caterank&p=1&page=" + page + "&words=&shuqi_h5=&onlyCpBooks=1&secondCate=" + gid + "&sort=monthHot&_=1510843580965",
 				success: function(data) {
 					//console.log(data.data)
 					var datas = data.data

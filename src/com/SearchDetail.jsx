@@ -34,7 +34,7 @@ export default class SearchDetail extends React.Component {
 		console.log(bookid)
 		console.log(name)
 		$.ajax({
-				url:"http://read.xiaoshuo1-sm.com/novel/i.php?do=is_serchpay&page=1&size=10&q="+name+"&filterMigu=1&p=3&shuqi_h5=&_=1511331271715",
+				url:"http://shuqi.guojiongwei.top/novel/i.php?do=is_serchpay&page=1&size=10&q="+name+"&filterMigu=1&p=3&shuqi_h5=&_=1511331271715",
 			success: function(data) {
 			console.log(data.aladdin)
 				that.setState({
@@ -43,7 +43,7 @@ export default class SearchDetail extends React.Component {
 			}
 		})
 		$.ajax({
-			url: "http://read.xiaoshuo1-sm.com/novel/i.php?do=sp_get&authorId="+authorid+"&bookId="+bookid+"&fetch=merge&sqUid=888154902&source=store&size=3&page=1&shuqi_h5=&_=1511079311858",
+			url: "http://shuqi.guojiongwei.top/novel/i.php?do=sp_get&authorId="+authorid+"&bookId="+bookid+"&fetch=merge&sqUid=888154902&source=store&size=3&page=1&shuqi_h5=&_=1511079311858",
 			success: function(data) {
 				console.log(data.data)
 				that.setState({

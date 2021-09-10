@@ -25,7 +25,7 @@ export default class Search extends React.Component {
 			var ipts = ipt.value;
 			if(ipts) {
 				$.ajax({
-					url: 'http://read.xiaoshuo1-sm.com/novel/i.php?do=is_pay_sugs&q=' + ipts + '&_=1511331243984',
+					url: 'http://shuqi.guojiongwei.top/novel/i.php?do=is_pay_sugs&q=' + ipts + '&_=1511331243984',
 					success: function(data) {
 						console.log(data)
 						var datas = data.data;
@@ -50,7 +50,7 @@ export default class Search extends React.Component {
 			name: name
 		})
 		$.ajax({
-			url: "http://read.xiaoshuo1-sm.com/novel/i.php?do=is_serchpay&page=1&size=10&q=" + name + "&filterMigu=1&p=3&shuqi_h5=&_=1511331271715",
+			url: "http://shuqi.guojiongwei.top/novel/i.php?do=is_serchpay&page=1&size=10&q=" + name + "&filterMigu=1&p=3&shuqi_h5=&_=1511331271715",
 			success: function(data1) {
 				console.log(data1.aladdin);
 				console.log(data1.data);
