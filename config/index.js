@@ -13,7 +13,7 @@ module.exports = {
     },
     build: {
         env: 'production',
-        publicPath: '/',
+        publicPath: './',
         assetsPath: 'static',
         productionSourceMap: false,
         devtool: '#source-map',
